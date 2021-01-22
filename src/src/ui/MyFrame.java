@@ -49,7 +49,6 @@ public class MyFrame extends JFrame {
         setChangeBackgroundButtonFunction();
 
         add(changeBackgroundButton);
-
     }
 
 
@@ -58,13 +57,14 @@ public class MyFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 panel.setVisible(false);
-                //returnBackgroundsInOrder();
                 panel = new MyPanel("cherryblossom.jpg");
                 add(panel);
                 panel.setVisible(true);
+                //returnBackgroundsInOrder();
             }
         });
     }
+
 
     /*
      *  MODIFIES: this
