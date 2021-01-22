@@ -4,10 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MyPanel extends JPanel {
-    private Image background;
+    public Image background;
 
-    public MyPanel() {
-        background = new ImageIcon("sheep.png").getImage();
+    public MyPanel(String imageName) {
+        background = new ImageIcon(imageName).getImage();
         this.setPreferredSize(new Dimension(640, 381));
 
     }
@@ -16,5 +16,7 @@ public class MyPanel extends JPanel {
         Graphics2D g2D = (Graphics2D) g;
         g2D.drawImage(background, 0, 0, null);
     }
+
+
 
 }
